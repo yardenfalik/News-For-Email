@@ -2,7 +2,7 @@
 A Python script that will send to your email 5 news articles so you don't miss anything.
 
 ## Introduction
-This is a Python script that will send to your email 5 news articles from a selected source.
+This Python script will retrieve news articles from a specified source. It will select 5 articles to send to your email address. The script allows you to customize which news source it pulls articles.
 
 ## Requirements
 1. To run the code `Python 3.12.1v` or above.
