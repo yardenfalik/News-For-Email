@@ -6,7 +6,7 @@ This is a Python script that will send to your email 5 news articles from a sele
 
 ## Requirements
 1. To run the code `Python 3.12.1v` or above.
-2. you will need these python libraries
+2. you will need these python libraries:
     * feedparser - `pip install feedparser`
     * beautifulsoup4 - `pip install beautifulsoup4`
 ## Getting Started
