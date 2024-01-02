@@ -4,12 +4,17 @@ import smtplib, ssl, email
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import date
+import json
+
+
+f = open('emailData.json')
+emaiData = json.load(f)
 
 today = date.today()
 
 sources = {"ynet":"https://www.ynet.co.il/Integration/StoryRss2.xml", "walla":"https://rss.walla.co.il/feed/1?type=main", "mako": "https://rcs.mako.co.il/rss/MainSliderRss.xml"}
 
-url = sources["mako"]
+url = sources["ynet"]
 
 email = input("Enter your email: ")
 
@@ -77,9 +82,9 @@ html = """
 
 """
 
-sender_email = "your gmail address"
+sender_email = emaiData["address"]
 receiver_email = email
-password = "your gmail password"
+password = emaiData["password"]
 
 #Create MIMEMultipart object
 msg = MIMEMultipart("alternative")
