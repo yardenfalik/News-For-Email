@@ -1,0 +1,6 @@
+{
+    "ynet":"https://www.ynet.co.il/Integration/StoryRss2.xml",
+    "walla":"https://rss.walla.co.il/feed/1?type=main",
+    "mako": "https://rcs.mako.co.il/rss/MainSliderRss.xml",
+    "nytimes": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+}

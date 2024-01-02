@@ -10,11 +10,19 @@ import json
 f = open('emailData.json')
 emaiData = json.load(f)
 
+sources = open('newsSources.json')
+sources = json.load(sources)
+
 today = date.today()
 
-sources = {"ynet":"https://www.ynet.co.il/Integration/StoryRss2.xml", "walla":"https://rss.walla.co.il/feed/1?type=main", "mako": "https://rcs.mako.co.il/rss/MainSliderRss.xml"}
+print("Available sources:")
+for source in sources.keys():
+    print(source)
 
-url = sources["ynet"]
+#aveilable sources: ynet, walla, mako, nytimes.
+source = input("Select your news source: ")
+
+url = sources[source]
 
 email = input("Enter your email: ")
 
