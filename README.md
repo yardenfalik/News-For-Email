@@ -11,7 +11,7 @@ This Python script will retrieve news articles from a specified source. It will 
     * beautifulsoup4 - `pip install beautifulsoup4`
 ## Getting Started
 To get started with this script follow these steps:
-1. Clone the repository: `git clone https://github.com/yardenfalik/TableAproximation.git`
+1. Clone the repository: `git clone https://github.com/yardenfalik/News-For-Email.git`
 2. Create a file in the project directory called `emailData.json`.
 3. Copy the following code into the `emailData.json` file:
 ```
